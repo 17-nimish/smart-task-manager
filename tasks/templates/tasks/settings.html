@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5">
+  <div class="card shadow p-4">
+    <h3 class="text-center mb-4">⚙️ Account Settings</h3>
+
+    <p class="text-muted text-center">Welcome, <b>{{ user.username|title }}</b> 👋</p>
+
+    <div class="mt-4">
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>Joined On:</strong> {{ user.date_joined|date:"M d, Y" }}</p>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="{% url 'logout' %}" class="btn btn-danger px-4">Logout</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
