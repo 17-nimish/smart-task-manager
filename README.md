@@ -14,7 +14,7 @@ A Django-based Task Management System where users can:
 
 ## 💻 How to Run
 ```bash
-git clone https://github.com/YOUR_USERNAME/smart-task-manager.git
+git clone https://github.com/17-nimish/smart-task-manager.git
 cd smart-task-manager
 python -m venv venv
 venv\Scripts\activate
